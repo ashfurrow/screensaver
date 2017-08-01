@@ -6,11 +6,17 @@ This is a starter template for projects using p5.js created by [Upperline School
 Just getting started with p5?  Check out some of our labs to help learn.
 
 [Map Face Lab](https://glitch.com/edit/#!/upperline-map-face-lab)
+
 [Array Basics Simon Lab](https://glitch.com/edit/#!/upperline-p5-array-basics-simon-lab)
+
 [Using Variables: Solar System Lab](https://glitch.com/edit/#!/upperline-p5-variables-solar-system-lab)
+
 [Conditional Challenges](https://glitch.com/edit/#!/upperline-p5-conditional-challenges)
+
 [P5 Loops With Objects](https://glitch.com/edit/#!/upperline-p5-loops-with-objects)
+
 [Ball and Paddle Lab](https://glitch.com/edit/#!/upperline-ball-and-paddle)
 
+[P5 Battleship](https://glitch.com/edit/#!/upperline-p5-battleship)
 
 
