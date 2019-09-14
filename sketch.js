@@ -22,12 +22,12 @@
  
 */
 
+// From Ash: I took this from here: https://artport.whitney.org/commissions/softwarestructures2016/s3_1/
+
 var numCircle = 100;
 var circles = [];
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  frameRate(30);
+function setupCircles() {
   for (var i = 0; i < numCircle; i++) {
     var x = random(width);
     var y = random(height);
@@ -36,6 +36,12 @@ function setup() {
     var yspeed = random(-1.0, 1.0);
     circles[i] = new Circle(x, y, r, xspeed, yspeed, i);
   }
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  frameRate(30);
+  setupCircles();
 }
 
 function draw() {
@@ -51,9 +57,10 @@ function draw() {
   }
 }
 
+// Resize canvas and generate new circles
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  console.log("HI")
+  setupCircles()
 }
 
 function Circle(px, py, pr, psp, pysp, pid) {
