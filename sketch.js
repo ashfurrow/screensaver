@@ -80,7 +80,9 @@ function Circle(px, py, pr, psp, pysp, pid) {
   
   this.makePoint = function() {
     stroke(0);
-    point(this.x, this.y);
+    // rect(this.x-1, this.y-1, 2, 2)
+    // point(this.x, this.y);
+    circle(this.x, this.y, 2);
   }
 
   this.move = function() {
@@ -129,6 +131,7 @@ function intersect(cA, cB) {
   var pbY = y2 + h * (cB.x - cA.x) / d;
 
   stroke(255-dist(paX, paY, pbX, pbY)*4); 
+  strokeWeight(2)
   line(paX, paY, pbX, pbY);
 
 }
