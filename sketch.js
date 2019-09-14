@@ -24,7 +24,7 @@
 
 // From Ash: I took this from here: https://artport.whitney.org/commissions/softwarestructures2016/s3_1/
 
-var numCircle = 100;
+var numCircle = 150;
 var circles = [];
 
 function setupCircles() {
@@ -45,7 +45,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(12);
   for (var i = 0; i < circles.length; i++) {
     circles[i].update();
   }
@@ -79,10 +79,8 @@ function Circle(px, py, pr, psp, pysp, pid) {
   }
   
   this.makePoint = function() {
-    stroke(0);
-    // rect(this.x-1, this.y-1, 2, 2)
-    // point(this.x, this.y);
-    circle(this.x, this.y, 2);
+    stroke(255);
+    point(this.x, this.y);
   }
 
   this.move = function() {
@@ -130,8 +128,7 @@ function intersect(cA, cB) {
   var pbX = x2 - h * (cB.y - cA.y) / d;
   var pbY = y2 + h * (cB.x - cA.x) / d;
 
-  stroke(255-dist(paX, paY, pbX, pbY)*4); 
-  strokeWeight(2)
+  stroke(12+dist(paX, paY, pbX, pbY)*4); 
   line(paX, paY, pbX, pbY);
 
 }
